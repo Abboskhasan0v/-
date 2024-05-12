@@ -80,11 +80,6 @@
                     &:hover {
                         transform: scaleY(0) !important;
                     }
-                    .nav__item {
-                        .nav__link {
-                            
-                        }
-                    }
                 }
                 @media (width < 460px) {
                     height: calc(100dvh - 166.2px);
@@ -243,3 +238,76 @@
 }
 
 /* header */
+
+/* intro */
+.intro {
+    background: url(../img/intro/intro-bg.png) no-repeat center center / cover;
+    padding: 100px 0;
+
+    .container {
+        display: flex;
+
+        @media ( width < 1024px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .intro__content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            @media ( width < 1024px) {
+                align-items: center;
+            }
+
+            .intro__title {
+                font-weight: 400;
+                color: #08090a; 
+                letter-spacing: 1.8px;
+                font-size: clamp(40px,3vw,60px);
+                line-height: 1;
+                span {
+                    color: var(--primary-color);
+                }
+
+                @media ( width < 1024px) {
+                    max-width: 600px;
+                    width: 100%;
+                    text-align: center;
+                    font-size: clamp(25px,2vw,40px);
+                }
+            }
+            .intro__txt {
+                font-size: 18px;
+                max-width: 539px;
+                width: 100%;
+                color: var(--secondary-color);
+
+                @media ( width < 1024px) {
+                    text-align: center;
+                }
+            }
+            .intro__btn {
+                margin-top: 23px;
+            }
+            .intro__content-info {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                color: #08090A;
+
+                span {
+                    color: var(--primary-color);
+                }
+
+                @media ( width < 1024px) {
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+/* intro */

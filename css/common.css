@@ -30,3 +30,19 @@ input, button, textarea {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.btn {
+    display: inline-block;
+    border-radius: var(--primary-radius);
+    color: #fff;
+    background: var(--primary-color);
+    padding: 19px 35px;
+    border: 1px solid transparent;
+    transition: 0.4s;
+
+    &:hover {
+        background: transparent;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+    }
+}
