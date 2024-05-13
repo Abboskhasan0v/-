@@ -240,16 +240,16 @@
 /* header */
 
 /* intro */
+
 .intro {
     background: url(../img/intro/intro-bg.png) no-repeat center center / cover;
-    padding: 100px 0;
 
     .container {
         display: flex;
+        align-items: center;
 
         @media ( width < 1024px) {
-            flex-direction: column;
-            align-items: center;
+            flex-direction: column; 
             gap: 20px;
         }
 
@@ -286,7 +286,7 @@
                 color: var(--secondary-color);
 
                 @media ( width < 1024px) {
-                    text-align: center;
+                    text-align: justify;
                 }
             }
             .intro__btn {
@@ -303,7 +303,7 @@
                 }
 
                 @media ( width < 1024px) {
-                    align-items: center;
+                    /* align-items: center; */
                 }
             }
         }
@@ -311,3 +311,34 @@
 }
 
 /* intro */
+
+/* about */
+
+.about {
+    background: url(../img/about/about-bg.png) no-repeat cover cover / center;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media ( width < 1024px ) {
+            flex-direction: column;
+            gap: 50px;
+        }
+        .about__content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: flex-start;
+            .about__title {
+                max-width: 374px;
+                width: 100%;
+            }
+            .about__btn {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/* about */

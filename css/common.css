@@ -46,3 +46,24 @@ input, button, textarea {
         color: var(--primary-color);
     }
 }
+
+section {
+    padding: 100px 0;
+}
+
+.section__title {
+    font-weight: 400;
+    font-size: clamp(40px,3vw,50px);
+    letter-spacing: 1.65px;
+    color: var(--primary-color);
+}
+
+
+.section__txt {
+    font-size: 18px;
+    line-height: 150%;
+    color: #546285;
+    letter-spacing: 0.36px;
+    max-width: 578px;
+    width: 100%;
+}
