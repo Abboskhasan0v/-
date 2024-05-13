@@ -342,3 +342,45 @@
 }
 
 /* about */
+
+/* works */
+
+.works {
+    .container {
+        .works__title {
+            text-align: center;
+        }
+        .works__cards {
+            margin-top: 66px;
+            display: flex;
+            justify-content: space-between;
+
+            @media (width < 1024px) {
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: space-around;
+            }
+            
+            .works__card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+
+                .works__card-title {
+                    font-weight: 400;
+                    font-size: 20px;
+                    text-align: center;
+                    color: #08090a;
+                }
+                .works__card-txt {
+                    text-align: center;
+                    max-width: 328px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* works */
