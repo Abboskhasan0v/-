@@ -315,7 +315,8 @@
 /* about */
 
 .about {
-    background: url(../img/about/about-bg.png) no-repeat cover cover / center;
+    background: url(../img/about/about-bg.png) no-repeat;
+    background-size: cover;
     .container {
         display: flex;
         align-items: center;
@@ -507,7 +508,49 @@
                 }
             }
         }
+        .menu_bbtb {
+            margin-top: 20px;
+        }
     }
 }
 
 /* menu */
+
+/* faq */
+
+.faq {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (width < 1024px) {
+            flex-direction: column;
+        }
+
+        .faq__content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+
+            @media (width < 1024px) {
+                align-items: center;
+                .section__title {
+                    text-align: center;
+                    font-size: clamp(25px,2vw,35px);
+                }
+                .section__txt {
+                    text-align: justify;
+                }
+            }
+
+            .faq__btn {
+                margin-top: 17px;
+            }
+        } 
+        
+    }
+}
+
+/* faq */
